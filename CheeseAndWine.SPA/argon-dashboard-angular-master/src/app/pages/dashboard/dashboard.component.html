@@ -1,0 +1,13 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <h1>Products</h1>
+    <div class="header-body" *ngIf="products">
+      <div *ngFor="let product of products" class="p-5 white">
+         <span> Nume: {{product.name}}  </span> <br>
+         <span> Descriere: {{product.description}}  </span> <br>
+         <span> Pret: {{product.price}}  </span> <br>
+        <img [routerLink]="['/login']" src={{product.url}}>
+      </div>
+    </div>
+  </div>
+</div>
